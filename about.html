@@ -2,18 +2,171 @@
 <html>
     <head><title>Web Quest2</title></head>
     <style>
+        img{
+            vertical-align: bottom;
+        }
+
         /* Area 1*/
         #top {
+            background-color: aqua;
             width: 1000px;
             height: 500px;
+            padding: 0%;
+            margin: auto;
+            margin-top: 30px;
         }
 
         .top_left{
+            background-color: pink;
+            position: relative;
+            float: left;
+            padding: 0%;
+            width: 75%;
+            height: 500px;
+        }
+
+        .top_right{
+            background-color: red;
+            float: right;
+            padding: 0%;
+            width: 25%;
+            height: 500px;
+        }
+
+        .top_box {
+            background-color: rgba(0, 128, 0, 0.664);
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            padding: 20px;
+            width: 210px;
+            height: 210px;
+        }
+
+        /* Area 2 */
+        #box_all{
+            background-color: blue;
+            margin: auto;
+            padding: 0%;
+            width: 1000px;
+        }
+
+        .box_left{
+            background-color: aqua;
+            float: left;
+            padding: 0%;
             width: 750px;
+            height: 500px;
+
+        }
+
+        .box_right{
+            background-color: yellow;
+            float: right;
+            width: 210px;
+            height: 460px;
+            padding: 20px;
+        }
+
+        .box:nth-child(n){
+            background-color: rgb(104, 80, 42);
+            float: left;
+            width: 210px;
+            height: 210px;
+            padding: 20px;
+        }
+
+        .box:nth-child(2n){
+            background-color: rgb(231, 165, 42);
+            float: left;
+            width: 210px;
+            height: 210px;
+            padding: 20px;
+        }
+
+        /* Area 3 */
+        #footer{
+            width: 1000px;
+            height: 40px;
+            margin: auto;
+        }
+
+        .f_left{
+            background-color: gray;
+            float: left;
+            width: 75%;
+            height: 40px;
+        }
+
+        .f_right{
+            background-color: pink;
+            float: right;
+            width: 25%;
+            height: 40px;
+        }
+
+        .textBox{
+            display: inline-block;
+            font-size: small;
+            width: 100%;
+            margin: 0%;
+            padding: 0% 3%;
+        }
+
+        .textBox p:nth-child(n){
+            display: inline-block;
+            padding: 0% 2%;
+            border-color: orange;
+            border-style: none solid none none;
+        }
+
+        .textBox p:last-child{
+            display: inline-block;
+            padding: 0% 2%;
+            border-style: none none none none;
         }
     </style>
 
     <body>
+        <div id="top">
+            <div class="top_left"">
+                <img src="./image/chef_about.png">
+                <div class="top_box"> 
+                    asdf
+                </div>
+            </div>
+            <div class="top_right">
+                <img src="./image/right1.png">
+                <img src="./image/right2.png">
+            </div>
+        </div>
+        <div id="box_all">
+            <div class="box_left">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+            </div>
+            <div class="box_right">
+                7
+            </div>
+        </div>
+        <div id="footer">
+            <div class="f_left">
+                <div class="textBox">
+                    <p>법적고지</p>
+                    <p>이메일무단수집거부</p>
+                    <p>이용약관</p>
+                    <p>개인정보취급방침</p>
+                    <p>고객센터</p>
+                    <p>입찰공고</p>
+                </div>
+            </div>
+            <div class="f_right">
 
+            </div>
+        </div>
     </body>
 </html>
